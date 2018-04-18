@@ -1,0 +1,1545 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>edsqwe - 厦门小鱼社区_厦门小鱼网 - Powered by phpwind</title>
+<meta name="generator" content="phpwind 8.5" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<!--[if IE 9 ]>
+<meta name="msapplication-task" content="name=网站首页; action-uri=http://bbs.xmfish.com; icon-uri=http://bbs.xmfish.com/favicon.ico" />
+<meta name="msapplication-task" content="name=个人中心; action-uri=http://bbs.xmfish.com/u.php; icon-uri=http://bbs.xmfish.com/images/ico/home.ico" />
+<meta name="msapplication-task" content="name=我的帖子; action-uri=http://bbs.xmfish.com/apps.php?q=article; icon-uri=http://bbs.xmfish.com/images/ico/post.ico" />
+<meta name="msapplication-task" content="name=消息中心; action-uri=http://bbs.xmfish.com/message.php; icon-uri=http://bbs.xmfish.com/images/ico/mail.ico" />
+<meta name="msapplication-task" content="name=我的设置; action-uri=http://bbs.xmfish.com/profile.php; icon-uri=http://bbs.xmfish.com/images/ico/edit.ico" />
+<![endif]-->
+<base id="headbase" href="http://bbs.xmfish.com/" />
+<link rel="stylesheet" href="images/pw_core.css?101128" />
+<link rel="stylesheet" href="u/images/style.css" />
+<link rel="stylesheet" href="images/post/minieitor/minieitor.css" />
+<style type="text/css">
+/*body bg*/
+html{background-color:#f9f7eb;}
+body{color:#666666;font:12px Tahoma,Arial;}
+.warp{background:url(u/themes/default85/images/head_bg.jpg) center 0 repeat-x;min-height:600px;}
+/*link*/
+a{color:#0e6caa; text-decoration:none;}
+a:hover,.line{ text-decoration:underline;}
+.s7{color:#6fb0d6;}
+.s7:hover{color:#0e6caa;}
+/*head bg*/
+.header{/*background:url(u/themes/default85/images/head_pic.png) center top no-repeat;*/}
+/*space banner*/
+.spBan h2{color:#ea7e00;}
+.spBan p{color:#999999;}
+/*main bg*/
+.contUser{background:#ffffff;}/*right -> content*/
+/*menu app*/
+.menuApp{margin-top:35px;}
+/*foot*/
+.foot{color:#999999;}
+.foot a{color:#666666;}
+/*nav*/
+.navA li a{color:#666666;font-size:14px;}
+.navA li a:hover{text-decoration:none;color:#000;}
+/*left menubar list*/
+.navB .one a{font-size:14px;color:#0e6caa;}
+.navB a:hover{ text-decoration:none;}
+.navB li em{color:#ff0000; font-style:normal;}
+.navB .current a{color:#0e6caa;color:#333333;font-weight:700;}
+.navB .current{background:url(u/themes/default85/images/navBcur.png) 10px 0 no-repeat;}
+/*app nav*/
+.appNav_top{ background:url(u/themes/default85/images/appNav_top.png) no-repeat;}
+.appNav{ background:url(u/themes/default85/images/appNav.png) no-repeat;color:#33798e;}
+.appNav ul{background:url(u/themes/default85/images/appNav_ul.png) left bottom no-repeat;}
+.appNav_bottom{ background:url(u/themes/default85/images/appNav_bottom.png) no-repeat;}
+.appNav a{color:#33798e;}
+.appNav li.current{background:url(u/themes/default85/images/appNav_cur.png) right center no-repeat; font-weight:700;}
+/*content nav one*/
+.navC{border-bottom:1px solid #cce2ed;}
+.navC li{border-left:1px solid #cce2ed;border-right:1px solid #cce2ed;}
+.navC li a{border-top:1px solid #cce2ed;background:#f1f6fa;color:#676568;}
+.navC li a:hover{background:#ffffff;text-decoration:none;}
+.navC .current,.navC li:hover{border-left:1px solid #cce2ed;border-right:1px solid #cce2ed;}
+.navC li:hover a{border-top:1px solid #cce2ed;}
+.navC .current a,.navC .current a:hover{background:#ffffff;border-bottom:1px solid #ffffff;color:#333333;border-top:1px solid #cce2ed;}
+.navC .current a{ font-weight:700;}
+/*nav bottom tips*/
+.tips input{color:#7eb0d3;}
+/*box*/
+.boxA,.boxB{border:1px solid #cce2ed;background:#ffffff;}
+.boxA h2,.boxB h2{background:#f1f6fa;border-bottom:1px solid #cce2ed;color:#666666;}
+.boxA h2 a{color:#106aa9;}
+.boxA .s7{color:#6fb0d6;}
+.boxC{border:1px solid #cce2ed;}
+.boxC h3{font-weight:700;color:#333333;}
+/*home info*/
+.userInfo_home{background: url(u/themes/default85/images/userInfo.jpg) 0 0 no-repeat;}
+.userInfo{}
+.userInfoweek .button{background:url(u/themes/default85/images/pub.png) no-repeat;color:#ffffff;text-shadow: 1px 1px 0 #2d6dbf;}
+.userInfoweek .button:hover{ background-position:0 -28px;}
+.homeSk_input{background:url(u/themes/default85/images/homeSk_input.png) no-repeat;}
+.limit{color:#444444;}
+.homeSk{background:url(u/themes/default85/images/textarea.png) no-repeat;}
+.sk_show,.sk_img,.sk_link{color:#666;}
+/*border*/
+.bdA{border-bottom:1px solid #e4e4e4;}
+.bdB{border-bottom:1px dotted #e4e4e4;}
+/*bg*/
+.bgA{background:#f1f6fa;}
+.bgB{background:#ffffff;}
+/*title*/
+h1{font-size:14px;font-weight:700;color:#333333;line-height:1.5;padding-top:2px;}
+.h5{border-bottom:1px solid #cce2ed;}
+.h5 li a{color:#666666;}
+.h5 .tab a{}
+.h5 .tab a:hover{ text-decoration:none;background:#f1f6fa;}
+.h5 .tab .current a{border:1px solid #cce2ed;border-bottom:0;background:#ffffff;}
+/*list*/
+.ulA li:hover,.ulA li.current{background:#f1f6fa;}
+.ulA em{font-size:11px;}
+.ulE li a{color:#666666;}
+.ulE li.current,.ulE li:hover{background:#f1f6fa;}
+.ulE li.current a{color:#0e6caa;}
+/*replay dl*/
+.redlA dl{background:#f1f6fa;}
+.redlA .replyip{border:1px solid #c9ddec;background:#fff;color:#333;}
+/*share*/
+.shareA{background:#ffffff;border:1px solid #e4e4e4;}
+.shareA span{border-left:1px solid #e4e4e4;background:#f1f6fa;}
+.shareA:hover{border:1px solid #0e6caa;background:#6fb0d6;text-decoration:none;color:#ffffff;}
+.shareA:hover span{border-left:1px solid #0e6caa;background:#6fb0d6;}
+/*table*/
+.tr2 td{border-top:1px solid #e4e4e4;border-bottom:1px dotted #e4e4e4;}
+.tr2 td em{color:#ff5500;}
+.tr3 td{border-bottom:1px dotted #e4e4e4;}
+.tr3 .name em{color:#999999;}
+.tr3 .name{color:#333333;}
+.tr3 .value{color:#999999;}
+.tr3 .value .b a{color:#333333;}
+.setTable .th{color:#333333;}
+.z .tr5:hover td{background:#f1f6fa;}
+.z2 .tr3:hover td{background:#fffaee;}
+.tr6 th{background:#f1f6fa;}
+.tr6 td,.tr6 th{border-bottom:1px solid #cce2ed;color:#333333;}
+.user-tr:hover{background:#f1f6fa;}
+/*jobcenter*/
+.tasks_text .one{background:#f1f6fa;}
+/*mail add*/
+.mailFri dl{background:#f1f6fa;}
+.mailFri .current dl{border:1px solid #fae3b9;background:#ffffe3;}
+/*search*/
+.search{border:1px solid #eaeceb;background:#ffffff;}
+.search .sip{background:#ffffff;}
+.search ul{border:1px solid #e4e4e4;background:#ffffff;}
+.search ul li:hover,.search ul li.current{background:#f1f6fa;}
+.search button{background:#fff url(u/images/search.png) 2px 2px no-repeat;}
+.spaceTip{background:#ffffe3;border:1px solid #fae3b9;}
+.spaceTip a{color:#0e6caa;}
+/*user list*/
+.dlA .dl{border-top:1px dotted #cccccc;}
+.dlA .dl2{background:#f1f6fa;}
+.dlA .dl2 dt img{border:1px solid #e4e4e4;background:#ffffff;}
+.dlB .dl{border-bottom:0px dotted #cccccc;}
+.dlB .dd p,.dlB .dd2 p{color:#333;}
+.dlE dl{border-bottom:1px solid #e4e4e4;}
+.dynamic .dd,.dynamic .dd2{border-bottom:1px dotted #e4e4e4;}
+.feedImg img{border:1px solid #e4e4e4;}
+.feedImgB{border:1px solid #cccccc;background:#f9f9f9;color:#999999;}
+.feedImgB a{color:#6fb0d6;}
+/*infoBox*/
+.ulInfoA li{border-left:1px solid #dce9f1;}
+.ulInfoA li em{font-size:14px; font-weight:700; font-family:Tahoma, Geneva, sans-serif}
+.ulInfoA li a{color:#666666;}
+.ulInfoA li a em{color:#0e6caa;}
+/*jobcenter*/
+.user-tr td,.user-tr3 td{border-top:1px dotted #e4e4e4;}
+.user-tr img{border:1px solid #e4e4e4;}
+.text_open{ font-size:14px;color:#333333;font-weight:700;}
+.text_open:hover{text-decoration:none;color:#0e6caa;}
+.current .text_open{text-decoration:none;color:#0e6caa;}
+.tasks_face_list li img{border:1px solid #e4e4e4;}
+.tasks_text_tr td{border-top:0;}
+/*app groups list*/
+.dlC .dd .titleB{border-bottom:1px dotted #cccccc;}
+.dlC .dd2 p.titleB{color:#333;}
+/*hot*/
+.w300 h2{ font-size:14px;color:#ff5500; font-weight:700;}
+.w300-box{border:1px solid #e4e4e4;}
+.w-390 .tr3:hover td{background:#f1f6fa;}
+.today-user a{color:#333333;}
+.img-list-a .current dd{ font-size:14px;color:#ff5500; font-weight:700;}
+.img-list-a dl{border-bottom:1px solid #e4e4e4;}
+.img-list-b li .aimg{background:#ffffff;border:1px solid #e4e4e4;}
+/*ap photo*/
+.g_listA li .aimg,.galbum_photo .g_listA li .aimg{background:#ffffff;border:1px solid #e4e4e4;}
+.g_listAC li.current div.aimg,.galbum_photo .g_listA li.current .aimg{border:1px solid #fae3b9;background:#ffffe3;}
+/*toolItem*/
+.toolItem{border-bottom:2px solid #e4e4e4;}
+.toolItem th{font-weight:700}
+.toolItem .infos{border-bottom:1px dotted #cccccc;}
+.toolInfo .toolTitle{background-color:#ffffe3; font-weight:800;border-top:2px solid #cccccc;}
+/*flash upload*/
+.g_photosbox td{border-bottom:1px dotted #e4e4e4;}
+.photoup dt{border:1px solid #cccccc;}
+/* space setting */
+.moduleList li{border:1px solid #cce2ed; background-color:#f1f6fa;}
+.moduleList li .icon,.moduleList li label.fl{color:#999999;}
+/*help pop*/
+a.help_a i{border:1px solid #fae3b9;background:#ffffe3;color:#333333;}
+/*conFeed*/
+.homeBg{background:#ffffff url(u/themes/default85/images/homebg.png) right 0 repeat-y;}
+.feedsAll{background:#ffffff url(u/themes/default85/images/) repeat-x;border:1px solid #cce2ed;border-bottom:0;}
+/*space_info*/
+#space_info .face img{ border:1px solid #cccccc;}
+#space_info .line{border-bottom:1px dotted #cccccc;}
+.appList li a{color:#333333;}
+/*conFeed*/
+.conFeed .dl{border-bottom:1px dotted #cccccc;}
+.conFeed .dd .title{color:#333333;} /*weibo title*/
+.conFeed .dd cite a{color:#999999;}
+.forward{border:1px solid #e4e4e4;background:#f9f9f9;}
+.redlB .img{border:1px solid #e4e4e4;background:#ffffff;}
+.redlB .dlA{border-top:1px dotted #cccccc;}
+.redlB .ddA textarea{border:1px solid #e4e4e4;}
+.forward .redlB{background:#ffffff;}
+.feedAdmin{border-bottom:1px dotted #cccccc;}
+/*Friends List*/
+.friDl{border-bottom:1px dotted #cce2ed;}
+/*friends search*/
+.friSearch{background:#f4f9fc;}
+.friSip{border:1px solid #e4e4e4;}
+.friSelect{border-left:1px solid #e4e4e4;}
+/*windows table*/
+.tA{border-top:1px solid #e8f5fb}
+.tA .tr td{background:#f2f9fd;border-bottom:1px solid #d7eef8;border-right:1px solid #f2f9fd;border-left:1px solid #f2f9fd;color:#698fa0;}
+.tA td,.tA th{border-bottom:1px solid #e8f5fb;border-right:1px solid #fff;border-left:1px solid #fff;}
+.tA tr:hover td,.tA tr:hover th{background:#f7fbff;border-bottom:1px solid #e8f5fb;border-right:1px solid #e8f5fb;border-left:1px solid #e8f5fb;color:#1d6180;}
+/*span color*/
+.s1{color:#f00;}/*red*/
+.s2{color:#ff5500;}/*org*/
+.s3{color:#080;}/*green*/
+.s4{color:#0e6caa;}/*blue*/
+.s5{color:#333333;}/*black*/
+.s6{color:#666666;}
+.s7{color:#6fb0d6;}
+.gray{color:#999999;}
+/*ie6 png 24*/
+.topwarp,.place div.one,.place div img,.navA,.popImgdel,.appNav_top,.appNav,.appNav_bottom,.logo img,.appNav .one li a img,h4.site img,.refresh img,.aset img{_behavior: url("u/images/iepngfix.htc");}
+/*expandApp*/
+.expandApp{border:1px solid #cce2ed;background:#ffffff;}
+.msg span{position: absolute;font-size:14px;text-align:center; left: 600px; top: 294px; width: 350px; height: 17px; font-family: Arial; text-align: left; word-wrap: break-word;}
+</style>
+<script type="text/javascript" src="/apps/rt/www/js/jquery.xmfish.17.08.min.js?t=1.0"></script>
+<script type="text/javascript" language="JavaScript" src="js/pw_ajax.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="js/core/core.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="js/core/tab.js"></script>
+<script language="JavaScript">
+var imgpath = 'images';
+var verifyhash = '4ef38fe6';
+var winduid = '2059941';
+var windid	= 'edsqwe';
+var groupid	= '10';
+var charset = 'gbk';
+var basename = '';
+var temp_basename = '';
+var modeimg = 'images/apps';
+var shortcut_menu={"fid":[6,472],"fname":["\u9e6d\u5c9b\u751f\u6d3b","\u9c7c\u9c7c\u7206\u6599"]};
+function resizeImg(ele){
+var a=ele;
+if(a.width<30||a.height<30){
+setTimeout(function(){
+resizeImg(a);
+},10)
+return false;
+}
+if(a.width>100){
+a.width = 100;
+} else if(a.height>100){
+a.height=100;
+}
+}
+</script>
+<script type="text/javascript">
+var _czc = _czc || [];
+_czc.push(["_setAccount", "36693"]);
+</script>
+<style>
+/* Shortcut */
+.shortcut_panel {width:20px;}
+.s_menu { border-top:#0393dc 3px solid;}
+#app_pay a{ color:#f33; font-weight:bold; }
+#app_pay a i{ display:inline-block; width:9px; height:16px; background:url(apps/pay/images/jiaofei-new.gif) no-repeat top; }
+.s_menu p { display:inline-block; width:20px; margin:0; padding:0; filter:alpha(opacity=70); -moz-opacity:0.70;opacity:0.70; background-color:#f8f8f8;}
+.s_menu:hover p { -moz-opacity:1;opacity:1; filter:none;}
+.s_menu p a { display:block; padding:5px 0; border:#e7e7e7 1px solid; border-top:none; text-decoration:none; text-align:center; color:#333 !important;}
+.s_menu p a:hover{ border:#0da3ef 1px solid; border-top:none; text-decoration:none; color:#fff !important;}
+.s_menu p a.feedback {line-height:16px;}
+.s_menu p a.feedback:hover { background:#0da3ef;}
+</style>
+</head>
+<body style="padding-top:0;">
+<link rel="stylesheet" href="/apps/rt/www/header.css" />
+<div class="header1" id="header">
+<div class="wrap">
+<ul class="fl">
+<li class="city sd-wrap"><a class="nav-link" href="http://www.xmfish.com">厦门小鱼<i></i></a>
+<div class="sd-panel">
+<ol>
+<li><a class="house" href="http://house.xmfish.com/" target="_blank" >房产</a></li>
+<li><a class="home" href="http://jiaju.xiaoyu.com/home/index" target="_blank" >家装</a></li>
+<li><a class="car" href="http://auto.xmfish.com/" target="_blank" >汽车</a></li>
+<li><a class="food" href="http://food.xmfish.com/" target="_blank" >美食</a></li>
+<li><a class="baby" href="http://bbs.xmfish.com/thread-htm-fid-75.html" target="_blank" >亲子</a></li>
+<li><a class="lady" href="http://lady.xiaoyu.com/" target="_blank" >丽人</a></li>
+<li><a class="tourism" href="http://travel.xiaoyu.com/" target="_blank" >旅游</a></li>
+<li><a class="healthy" href="http://www.xiaoyu.com/health/index" target="_blank" >健康</a></li>
+<li><a class="finance" href="http://8.xiaoyu.com" target="_blank" >金融</a></li>
+<li><a class="marry" href="http://marry.xmfish.com/" target="_blank" >婚嫁</a></li>
+</ol>
+</div><!--/end .sd-panel-->
+</li>
+<li><a class="nav-link" href="http://bbs.xmfish.com/" rel="external nofollow">社区</a></li>
+<li><a class="nav-link" href="http://info.xmfish.com/" rel="external nofollow">分类</a></li>
+  
+<li><a class="nav-link" href="http://app.xmfish.com/" rel="external nofollow">手机</a></li>	 
+</ul>
+<div class="search ulib-r3" id="search-down">
+<form method="get" action="http://s.xmfish.com/s" name="top_search" id="top_search"><input type="hidden" name="type" value="thread"><input onkeyup="changeSearch(jQuery(this).val());" class="search-txt fl slight" type="text" value="" id="search" name="keyword" /><a class="search-btn fr" href="javascript:jQuery('#top_search').submit();" rel="external nofollow">搜索</a></form>
+<label class="header-label" style="display: block;">搜帖子、用户或商家...</label>
+<style>.header-label{ position:absolute;margin-top:2px;margin-left: 5px; left:0; color:#ccc;display:block;width: 130px; cursor:text; font-size:12px; }</style>
+<div class="sd-panel" style="display:none;"></div>
+</div>
+<ul class="fr" style="z-index:100;position: relative;">
+<li class="sd-wrap"><a class="nav-link" href="/message.php" rel="external nofollow">消息<span class="sd-news-note" style="display:none;"></span></a>
+   <div class="sd-panel sd-w125">
+<ol>
+<li><a class="sd-w125 sd-clear" href="/message.php?type=sms" target="_blank" rel="external nofollow"><span class="fl">查看私信</span><span id="user_newpm_num" class="fr sd-num-tip"></span></a></li>
+<li><a class="sd-w125 sd-clear" href="/message.php?type=notice" target="_blank" rel="external nofollow"><span class="fl">查看通知</span><span id="user_notice_num" class="fr sd-num-tip"></span></a></li>
+<li><a class="sd-w125 sd-clear" href="/u.php?a=friend&type=attentioned" target="_blank" rel="external nofollow"><span class="fl">查看粉丝</span><span id="user_newfan_num" class="fr sd-num-tip"></span></a></li>
+<li><a class="sd-w125 sd-clear" href="/apps.php?q=weibo&do=refer" target="_blank" rel="external nofollow"><span class="fl">查看@我</span><span id="user_atme_num" class="fr sd-num-tip"></span></a></li>
+</ol>
+</div><!--/end .sd-panel-->
+  </li><!--/end .sd-wrap-->
+  <li class="sd-wrap">
+  <a class="nav-link nav-link-account" href="/u.php">edsqwe<i></i></a>
+  <div class="sd-panel">
+ <ol>
+<li><a href="u.php" onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','个人中心','1',''])" rel="external nofollow">个人中心</a></li>
+<li><a href="/u.php?uid=2059941" onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','我的主页','1',''])" rel="external nofollow">我的主页</a></li>
+<!-- <li><a href="http://u.xmfish.com/group?act=my" onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','我的圈子','1',''])" rel="external nofollow">我的圈子</a></li> -->
+<li><a href='/apps.php?q=groups' onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','我的群组','1',''])" rel='external nofollow'>我的群组</a></li>
+<li><a href='/apps.php?q=article' onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','我的帖子','1',''])" rel='external nofollow'>我的帖子</a></li>
+<li><a href='/apps.php?q=collection' onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','我的收藏','1',''])" rel='external nofollow'>我的收藏</a></li>
+<li><a href='/jobcenter.php' onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','我的任务','1',''])" rel='external nofollow'>我的任务</a></li>
+<li><a href="/profile.php?action=modify" onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','帐号设置','1',''])" rel="external nofollow">帐号设置</a></li>
+<li><a href="/u.php?a=friend&type=my" onclick="_czc.push(['_trackEvent','小鱼网','会员下拉','好友管理','1',''])" rel="external nofollow">好友管理</a></li>
+<li><a href="http://www.xiaoyu.com/logout?url=http%3A%2F%2Fbbs.xmfish.com%2Fu.php%3Fjumpurl%3Dhttp%3A%2F%2Fbbs.xmfish.com%2Fu.php%3Fjumpurl%3Dhttp%3A%2F%2Fbbs.xmfish.com%2Fu.php%3Fjumpurl%3Dhttp%3A%2F%2Fbbs.xmfish.com%2Fu.php%3Fjumpurl%3Dhttp%3A%2F%2Fbbs.xmfish.com%2Fu.php" rel="external nofollow">退出</a></li>
+</ol>
+  </div>
+  </li><!--/end .sd-wrap-->
+   </ul>
+<div id="notice-buddle-tip" class="ulib-r5 ulib-sg">
+<a class="btn-close"  id="notice-buddle-close" href="javascript:" rel="external nofollow">知道了</a>
+<p class="hidden"><a href="/message.php?type=notice&action=unread" target="_blank" id="seeNotice_nt" rel="external nofollow">你有<strong class="serious" id="tipsNum_nt">0</strong>个系统通知</a></p>
+<p class="hidden"><a href="/apps.php?q=weibo&do=refer" id="seeNotice_at">你有<strong class="serious" id="tipsNum_at">0</strong>个@我的</a></p>
+<p class="hidden"><a href="/message.php?type=sms&action=unread" id="seeNotice_pm">你有<strong class="serious" id="tipsNum_pm">0</strong>条私信</a></p>
+<p class="hidden"><a href="http://u.xmfish.com/comments" id="seeNotice_cm">你有<strong class="serious" id="tipsNum_cm">0</strong>个评论</a></p>
+<p class="hidden"><a href="/u.php?a=friend&type=attentioned" id="seeNotice_fs">你有<strong class="serious" id="tipsNum_fs">0</strong>个新增粉丝</a></p>
+</div>
+<script>
+jQuery(document).ready(function(){
+var elementjs = document.createElement("script");
+elementjs.src = '/jq_ajax.php?action=showNotice&uid=2059941';
+elementjs.type = 'text/javascript';
+elementjs.charset = 'GBK';
+var html_doc = document.getElementsByTagName('head')[0];
+html_doc.appendChild(elementjs);
+jQuery('#notice-buddle-close').click(function () {
+jQuery('#notice-buddle-tip').hide();
+SetCookie("ifshownoticepop",1,86400);
+});
+})
+</script>
+</div>
+</div>
+<script language="javascript"> 
+jQuery(document).ready(function(){
+jQuery('.search-txt').each(function() {
+if(jQuery(this).val()){
+jQuery('.header-label').hide();
+}else{
+jQuery('.header-label').click(function(){
+jQuery(this).hide().siblings('form').find('.search-txt').focus();
+});
+jQuery('.search-txt').focus(function(){
+jQuery(this).parent().siblings('.header-label').hide();
+});
+jQuery('.search-txt').blur(function(){var txt = jQuery(this).val();
+if(txt){
+jQuery(this).parent().siblings('.header-label').hide();
+}else{
+jQuery(this).parent().siblings('.header-label').show();
+}
+});
+}
+});
+});
+ 
+jQuery(document).ready(function(){
+jQuery('#header .sd-wrap').hover(function(){
+jQuery(this).addClass('active');
+},function(){
+jQuery(this).removeClass('active');
+});  
+jQuery('.switch_city .sct,.switch_city .city_list').hover(
+function(){
+jQuery('.switch_city .city_list').show();
+},function(){
+jQuery('.switch_city .city_list').hide();
+});
+});
+function changeSearch(keyword){
+if(keyword != ''){
+keyword = keyword.substring(0,8);
+var str = '<ol><li><a href="http://s.xmfish.com/s?keyword='+keyword+'&type=thread">搜"<span class="serious">'+keyword+'</span>"相关的帖子</a></li><li><a href="http://s.xmfish.com/s?keyword='+keyword+'&type=user">搜"<span class="serious">'+keyword+'</span>"相关的人</a></li><li><a href="http://s.xmfish.com/s?keyword='+keyword+'&type=biz">搜"<span class="serious">'+keyword+'</span>"相关的商家</a></li></ol>';
+jQuery('#search-down .sd-panel').html(str);
+jQuery('#search-down .sd-panel').show();
+}else{
+jQuery('#search-down .sd-panel').hide();
+}
+}
+</script>
+ 
+
+<div class="warp">
+<div class="header">
+<div class="topbar">
+</div>
+<!--head begin-->
+<div class="headB cc">
+<a class="fr appMenu" href="u.php?uid=2059941">我的空间</a>
+<a class="fr aUpload" href="apps.php?q=photos&a=upload&job=flash">传照片</a>
+<div class="place fl">
+<div><a href="u.php"><img src='u/images/p_logo.png' width="146" height="39" title="个人中心" /></a></div>
+</div>
+</div>
+<div id="menu_profile" style="display:none;">
+<div style="margin-right:-6px;">
+<div class="pw_menu" style="width:45px; position:relative;">
+<h6 style="left:-1px;"><a href="profile.php" class="link_down"><span>设置</span></a></h6>
+<ul class="menuList" style="width:43px;">
+<li><a href="profile.php?action=modify">帐号</a></li>
+<li><a href="profile.php?action=auth" target="_blank">认证</a></li>
+<li><a href="profile.php?action=privacy">隐私</a></li>
+<li><a href="userpay.php">积分</a></li>
+<li><a href="profile.php?action=permission">权限</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="menu_userinfomore" style="display:none;">
+<!--[if IE 6]>
+<iframe frameborder='0' style='position:absolute;top:0;width:100%;height:300px;filter:Alpha(opacity=0);_filter:Alpha(opacity=0);opacity:.0;'></iframe>
+<![endif]-->
+<div style="margin-left:-7px;margin-top:-1px; position:relative;width:320px;">
+<div class="cc pw_menu">
+<h6 style="left:0px;right:auto;"><a href="u.php" class="b link_down"><span>edsqwe</span></a></h6>
+<ul class="menu-half cc" style="width:26em;">
+<li>等级: 社区新鱼</li>
+<li>帖子: 0</li>
+<li>今日: 0</li>
+<li>经验值: 0 点</li>
+<li>小鱼币: 0 个</li>
+<li>贡献值: 0 点</li>
+<li>最后登录: <span class="f10">2017-11-25</span></li>
+<li style="width:90%">登录IP: <span class="f10">115.193.168.122</span></li>
+</ul>
+<div class="userbindingMenu"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="menu_setskin" style="display:none;">
+<div class="pw_menu" style="position:absolute;margin:-2px 0 0 -431px;height:270px;width:435px;">
+<div class="pw_menuBg">
+<h6><img src="images/pwicon/style.gif" align="absmiddle" alt="个人中心风格切换" /></h6>
+<div class="c mb10">&nbsp;</div>
+<ul class="cc menuSkin" style="height:210px;">
+<li class="li_menu_skin li_menu_skin1 " style='display:block;'>
+<a href="javascript:;" onClick="Change_Skin('default');">
+<i style="background:url(u/themes/default/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skindefault"><input type="radio" name="spaceskin" value="default" id="skindefault" class="mr5"  />翱翔</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin1 " style='display:block;'>
+<a href="javascript:;" onClick="Change_Skin('black');">
+<i style="background:url(u/themes/black/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skinblack"><input type="radio" name="spaceskin" value="black" id="skinblack" class="mr5"  />黑色</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin1 " style='display:block;'>
+<a href="javascript:;" onClick="Change_Skin('ink');">
+<i style="background:url(u/themes/ink/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skinink"><input type="radio" name="spaceskin" value="ink" id="skinink" class="mr5"  />山水</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin1 " style='display:block;'>
+<a href="javascript:;" onClick="Change_Skin('love');">
+<i style="background:url(u/themes/love/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skinlove"><input type="radio" name="spaceskin" value="love" id="skinlove" class="mr5"  />友情</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin1 " style='display:block;'>
+<a href="javascript:;" onClick="Change_Skin('navgreen');">
+<i style="background:url(u/themes/navgreen/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skinnavgreen"><input type="radio" name="spaceskin" value="navgreen" id="skinnavgreen" class="mr5"  />礼物</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin1 " style='display:block;'>
+<a href="javascript:;" onClick="Change_Skin('navyblue');">
+<i style="background:url(u/themes/navyblue/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skinnavyblue"><input type="radio" name="spaceskin" value="navyblue" id="skinnavyblue" class="mr5"  />深蓝</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin2 current" style='display:none;'>
+<a href="javascript:;" onClick="Change_Skin('default85');">
+<i style="background:url(u/themes/default85/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skindefault85"><input type="radio" name="spaceskin" value="default85" id="skindefault85" class="mr5"  checked />蒲公英</label></span>
+</a>
+</li>
+<li class="li_menu_skin li_menu_skin2 " style='display:none;'>
+<a href="javascript:;" onClick="Change_Skin('prayer');">
+<i style="background:url(u/themes/prayer/images/preview.jpg) no-repeat">&nbsp;</i>
+<span><label for="skinprayer"><input type="radio" name="spaceskin" value="prayer" id="skinprayer" class="mr5"  />祈祷</label></span>
+</a>
+</li>
+</ul>
+<div class="cc" style="padding-left:12px;padding-bottom:5px;">
+ <input type="hidden" name="skin_now_page" id="skin_now_page" value="1">
+ <input type="hidden" name="skin_total_page" id="skin_total_page" value="2">
+ <div class="pages o_useskin_pages" style="position:absolute;">
+<a name="o_useskin_pages_name_1" class='current' id="o_useskin_pages_1" href="javascript:;" onClick="show_o_useskin_page(1);change_link_bg(1);">1</a>
+<a name="o_useskin_pages_name_2"  id="o_useskin_pages_2" href="javascript:;" onClick="show_o_useskin_page(2);change_link_bg(2);">2</a>
+  	<a href="javascript:;" onClick="show_o_useskin_nextpage();change_link_bg_nextpage();">&raquo;</a></div>
+</div>
+</div>
+</div>
+</div>
+<script language="javascript">
+/**/
+function show_o_useskin_page(id){
+var pre_skin = getElementsByClassName("li_menu_skin","menuSkin");
+var currect_skin = getElementsByClassName("li_menu_skin"+id,"menuSkin");
+for(i in pre_skin){
+pre_skin[i].style.display="none";
+}
+for(i in currect_skin){
+currect_skin[i].style.display="block";
+}
+var nowPage = document.getElementsByName('skin_now_page');
+for (var x=0;x<nowPage.length;x++) {
+nowPage[x].value = id;
+}
+//getObj("skin_now_page").value=id;
+}
+function show_o_useskin_nextpage(){
+var nowpage = getObj("skin_now_page").value;
+var totalpage = getObj("skin_total_page").value;
+if(nowpage<1){
+nextpage=1;
+}else if(nowpage>=totalpage){
+nextpage=totalpage;
+}else{
+nextpage = Number(nowpage)+1;
+}
+show_o_useskin_page(nextpage);
+}
+function Change_Skin(v){
+ajax.send('pw_ajax.php?action=changeuskin', 'skin='+v, function() {
+window.location.reload();
+});
+return false;
+}
+function change_link_bg(i){
+var totalpage = getObj("skin_total_page").value;
+for(a=1;a<=totalpage;a++){
+if(i==a) {
+var names = document.getElementsByName('o_useskin_pages_name_'+i);
+for (var y=0;y<names.length;y++) {
+names[y].className="current";
+}
+//getObj("o_useskin_pages_"+a).className="current";
+} else {
+var otherNames = document.getElementsByName('o_useskin_pages_name_'+a);
+for (var x=0;x<otherNames.length;x++) {
+otherNames[x].className='';
+}
+//getObj("o_useskin_pages_"+a).className="";
+}
+}
+}
+function change_link_bg_nextpage(){
+var nowpage = getObj("skin_now_page").value;
+var totalpage = getObj("skin_total_page").value;
+if(nowpage<1){
+nextpage=1;
+}else if(nowpage>=totalpage){
+nextpage=totalpage;
+}else{
+nextpage = Number(nowpage);
+}
+change_link_bg(nextpage);
+}
+/**/
+</script>
+<div class="main">
+<div class="menuApp">
+<div class="appNav_top"></div>
+<div class="appNav">
+<ul class="one">
+<li id="app_home"><a href="u.php"><i class="icon_home"></i>首页</a></li>
+<li id="app_friend"><a href="u.php?a=friend"><i class="icon_friend"></i>朋友</a></li>
+<li id="app_collection"><a href="apps.php?q=collection"><i class="icon_collection"></i>收藏</a></li>
+  <li id="app_pay"><a href="apps.php?q=pay"><u class="icon_userpay"></u>缴费<i></i></a></li>
+</ul>
+<ul class="one">
+<li id="app_weibo"><a href="apps.php?q=weibo&do=topics"><i class="icon_record"></i>新鲜事</a></li>
+<li id="app_photos"><a href="apps.php?q=photos"><i class="icon_albums"></i>相册</a></li>
+<li id="app_article"><a href="apps.php?q=article"><i class="icon_posts"></i>帖子</a></li>
+<li id="app_activity"><a href="apps.php?q=activity"><i class="icon_activity"></i>活动</a></li>
+<li id="app_groups"><a href="apps.php?q=groups"><i class="icon_groups"></i>群组</a></li>
+<li id="app_jobcenter"><a href="jobcenter.php"><i class="icon_jobcenter"></i>任务</a></li>
+<li id="app_toolcenter"><a href="profile.php?action=toolcenter"><i class="icon_toolcenter"></i>道具</a></li>
+</ul>
+<div class="tac">
+<a href="u.php?a=myapp&action=my">管理</a>
+</div>
+</div>
+<div class="appNav_bottom"></div>
+</div>
+<script language="JavaScript">
+setCurrent('app_','app_home','current');
+</script>
+<script src="js/pw_weibo.js"></script>
+<script>
+var transmitAction = 'user_home';
+</script>
+<div class="homeBg cc">
+<div class="homeCont fl">
+<div class="userInfo_home">
+</div>
+<div class="feedLive cc" id="J_feedLive">
+<a href="javascript:;" class="fl preLive">上一页</a>
+<a href="javascript:;" class="fr nextLive">下一页</a>
+<div class="ulLive" style="height:56px;overflow:hidden;width:535px;">
+<ul class="cc">
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1907694" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/94/1907694.jpg" alt="健身小郑" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1907694">健身小郑:</a></span>	<a href="read-htm-tid-14957315.html" target="_blank">[11-25]浩沙健身10周年庆典，游泳卡，瑜伽卡，健身卡买一年送一年</a>
+ 
+   厦门浩沙健身7家门店健康咨询及办卡专线(小郑)：
+手机 18659279427 
+微信(QQ):710356774
+ 
+ 
+ 浩沙中国健身行业首个上市公司，世界品 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1907694" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/94/1907694.jpg" alt="健身小郑" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1907694">健身小郑:</a></span>	<a href="read-htm-tid-14957311.html" target="_blank">[11-25]浩沙健身佳馨店室内泳池 浩沙健身游泳卡活动！</a>
+ 
+   厦门浩沙健身7家门店健康咨询及办卡专线(小郑)：
+手机 18659279427 
+微信(QQ):710356774
+ 
+ 
+ 浩沙中国健身行业首个上市公司，世界品 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1407059" class="img_50 mr10"><img src="images/face/none.gif" alt="zzttyu" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1407059">zzttyu:</a></span>	<a href="read-htm-tid-14957310.html" target="_blank">五座汽车座垫转</a>
+ 
+   木珠座垫珠子座垫汽车坐垫汽车座垫 五座通用座垫原价700多店内购入， 150元150块出需要私信不议价，，，，，图1是全部实物图，图234是 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=229015" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/15/229015.jpg" alt="cljnihao" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=229015">cljnihao:</a></span>	<a href="read-htm-tid-14957288.html" target="_blank">[11-25]装修进行时</a>
+ 
+   2015年5月，在老公同事的介绍下什么都没了解的情况下在角美中骏四季阳光买了房，今年8月份终于交房啦，还没交房就经常构造自己新家的 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1250032" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/32/1250032.jpg" alt="EasonZQX" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1250032">EasonZQX:</a></span>	<a href="read-htm-tid-14957278.html" target="_blank">[11-25]皈依之路</a>
+ 
+   后来，末学不再继续研读圣经，而选择学习佛法。半年中，经历很多事，相遇善知识，皈依于三宝，不再忘初心。若说修学 首楞严王三昧 能 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=2057979" class="img_50 mr10"><img src="images/face/9.jpg" alt="xyccl" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=2057979">xyccl:</a></span>	<a href="read-htm-tid-14957278.html" target="_blank"></a>
+ 
+   分享照片</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=2010689" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/89/2010689.jpg?time=1502003533" alt="Q11111x" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=2010689">Q11111x:</a></span>	<a href="read-htm-tid-14957235.html" target="_blank">[11-25]&nbsp;&nbsp;【浩沙健身】十周年庆！！瑜伽卡、健身卡、游泳卡</a>
+ 
+   浩沙（厦门区）健身办卡专线： 
+
+小邱：13110590653
+
+微信：13110590653
+
+ 
+浩沙（hosa）健身全体员工竭诚为您提供专业、体贴的服 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1949333" class="img_50 mr10"><img src="images/face/none.gif" alt="y85008936" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1949333">y85008936:</a></span>	<a href="read-htm-tid-14957228.html" target="_blank">[11-25]【湖州】长兴【白溪景苑】—售楼部在哪里？售楼电话是多少？</a>
+ 
+   湖州长兴白溪景苑湖州白溪景园长兴白溪景苑
+售楼处王经理：131-7362-1905微信同
+面积：68平—130平 均价：8400
+总价：57万——110万
+ ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=2058578" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/78/2058578.jpg" alt="晨枫是谁" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=2058578">晨枫是谁:</a></span>	<a href="read-htm-tid-14957214.html" target="_blank">[11-25]说说我遇到的一对一外教的坑</a>
+ 
+   以下都是个人的真实经历，因为我有一颗热爱学习而且还打不死的的心，才会一而再再而三的踩到这些坑，所以说出来让大家提防提防。
+第 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1180112" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/12/1180112.gif" alt="MrJeans" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1180112">MrJeans:</a></span>	<a href="read-htm-tid-14957204.html" target="_blank">[11-25]创业初期的心酸</a>
+ 
+   林子大了，总能遇到几个不靠谱的人。。。
+虽说是带薪创业，但是分分钟钟想放弃。。。
+自己动手搞电焊。。。
+自己动手做工装。。。
+自 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1936148" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/48/1936148.jpg" alt="小柯555" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1936148">小柯555:</a></span>	<a href="read-htm-tid-14957201.html" target="_blank">[11-25]真正零首付来啦</a>
+ 
+   真正零首付来啦
+最新K2销售方案
+方案一：首付7000元月供2288元尾款12000元
+方案二：0首付 月供2650元 尾款12000元
+方案三：0首付 月供 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957199.html" target="_blank">[11-25]雅思写作范文模板，你用对了吗？</a>
+ 
+   雅思考试中的终极写作“大怪”写作任务2似乎对于很多烤鸭们来说，要想在规定的时间内和严格的字数限制下功课下来并取得理想的成绩并非 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957194.html" target="_blank">[11-25]雅思写作8分考生超实用经验分享！</a>
+ 
+   雅思准备时间：大概1.5个月
+Tips: （大小作文都适用）
+1. 不要老是用see，say等。尽量用更加详细的词汇描述，例如see可以用perceive,  ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=236302" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/02/236302.jpg" alt="iiping" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=236302">iiping:</a></span>	<a href="read-htm-tid-14957189.html" target="_blank">[11-25]下雨就写字吧——楷法无欺！！</a>
+ 
+   下雨就写字吧——楷法无欺！！
+欧楷，狼毫。
+
+杜工部诗一首</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957188.html" target="_blank">[11-25]雅思精读该怎么做</a>
+ 
+   长期备考的烤鸭们都会收到这样一条建议：做精读啊。但是，精读到底应该怎么做？只要尝试过精读的同学们通常会觉得精读虽好，可是一篇1 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957184.html" target="_blank">[11-25]雅思高分作文的三大特点</a>
+ 
+   雅思考试首先是一个语言能力的考试，因此，在雅思作文的评分标准里面，语言永远都是最重要的一项。只要我们清楚了雅思写作的高分特点 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=107796" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/96/107796.jpg?time=1501557068" alt="tassadar" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=107796">tassadar:</a></span>	<a href="read-htm-tid-14957184.html" target="_blank"></a>
+ 
+   分享照片</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957168.html" target="_blank">[11-25]词汇量都不到8000还想过雅思？</a>
+ 
+   雅思单词量是一切语言考试的基础，在参加一项外语考试之前，无论是四六级，托福雅思，GRE和GMAT，相信大部分同学的备考第一步就是买对 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=1660209" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/small/09/1660209.jpg" alt="索菲亚全屋定制" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=1660209">索菲亚全屋定制:</a></span>	<a href="read-htm-tid-14957164.html" target="_blank">[11-25]&#8203;《我和朗丁的日常》正式上线，这一次只想撒糖虐你！</a>
+ 
+   我所向往的生活一是有TA，二是做自己
+我是天生爱情狂
+十六岁那年，偷偷暗恋了隔壁班的男生十八岁高考后，哭闹着不肯分手却输给了异地 ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957163.html" target="_blank">[11-25]雅思官方统计：最容易拼错的258个单词！</a>
+ 
+   A
+accommodation
+according
+account
+accounting
+achievement
+achieving
+advertisement
+affect
+afraid
+almost
+although
+ambulance
+amou ..</p>
+</li>
+<li style="height:52px;overflow:hidden;">
+<a href="apps.php?q=weibo&uid=220106" class="img_50 mr10"><img src="http://img.xmfish.com/attachment/upload/06/220106.jpg" alt="nancyyuan" /></a>
+<p style="width:105px;overflow:hidden;"><span><a href="u.php?uid=220106">nancyyuan:</a></span>	<a href="read-htm-tid-14957161.html" target="_blank">[11-25]雅思高分大作文：climate change essay</a>
+ 
+   Climate change represents a major threat tolife on Earth, but some people argue that we need to accept it rather than tryto s ..</p>
+</li>
+</ul>
+<script type="text/javascript">
+(function(){
+var interval;
+function moveElement(elem, final_x, final_y, interval){
+/*if (!elem.style.left) elem.style.left = "0px";
+if (!elem.style.top) elem.style.top = "0px";
+var xpos = parseInt(elem.style.left);
+var ypos = parseInt(elem.style.top);
+if (xpos == final_x && ypos == final_y){ if (elem.movement) clearTimeout(elem.movement);return true;}
+if (xpos < final_x) {var dist = Math.ceil((final_x - xpos) / 1.2);xpos = xpos + dist;}
+if (xpos > final_x) {var dist = Math.ceil((xpos - final_x) / 1.2);xpos = xpos - dist;}
+elem.style.left = xpos + "px";elem.style.top = ypos + "px";*/
+elem.style.left = final_x+'px';
+//elem.movement = setTimeout(function(){moveElement(elem, final_x, final_y, interval)}, interval);
+}
+var moveElem = getElementsByClassName("cc","J_feedLive")[0];
+var prevElem = getElementsByClassName("preLive","J_feedLive")[0];
+var nextElem = getElementsByClassName("nextLive","J_feedLive")[0];
+var lis = moveElem.getElementsByTagName("li");
+if(lis.length%3!=0){
+for(var i=0;i<lis.length%2;i++)
+{
+moveElem.removeChild(lis[0]);
+}
+}
+var width = lis[0].offsetWidth;
+var currentNum = 0;moveElem.style.left = 0;
+moveElem.style.width = width*lis.length+"px";
+prevElem.onclick = function(){
+clearInterval(interval);
+if(currentNum==0){
+var oFragment = document.createDocumentFragment();
+while(lis.length!=3){
+var node = lis[lis.length-1];
+oFragment.insertBefore(node.cloneNode(true),oFragment.childNodes[0]);
+moveElem.removeChild(node);
+}
+moveElem.insertBefore(oFragment,lis[0]);
+moveElem.style.left = -width*(lis.length-3)+"px";
+currentNum = 6;
+}
+moveElement(moveElem,parseInt(moveElem.style.left)+width*3,0,10);
+currentNum-=3;
+interval = setInterval(function(){
+nextElem.onclick();
+},6000);
+};
+nextElem.onclick = function(){
+clearInterval(interval);
+if(currentNum==lis.length-3){
+var oFragment = document.createDocumentFragment();
+while(lis.length!=3){
+var node = lis[0];
+oFragment.appendChild(lis[0].cloneNode(true));
+moveElem.removeChild(lis[0]);
+}
+moveElem.appendChild(oFragment);
+moveElem.style.left = 0;
+currentNum = 0;
+}
+moveElement(moveElem,parseInt(moveElem.style.left)-width*3,0,10);
+currentNum+=3;
+interval = setInterval(function(){
+nextElem.onclick();
+},6000);
+};
+interval = setInterval(function(){
+nextElem.onclick();
+},6000);
+})();
+</script>
+</div>
+</div>
+<!--新鲜事同步提示-->
+<!--end-->
+<div class="p20">
+<h5 class="h5 cc">
+<strong class="f14 mr20">新鲜事</strong>
+<ul class="tab">
+<li  class="current" onclick="filterWeibo(this,'all');"><a href="javascript:;" hidefocus="true">全部</a></li>
+<li  onclick="filterWeibo(this,'strings');"><a href="javascript:;" hidefocus="true">文字</a></li>
+<li  onclick="filterWeibo(this,'imgs');"><a href="javascript:;" hidefocus="true">图片</a></li>
+<li  onclick="filterWeibo(this,'filterall');var frm = getObj('feedAdmin');frm.style.display=((frm.style.display=='block')?('none'):('block'));"><a href="javascript:;" class="link_down"  hidefocus="true"><span>更多筛选</span></a></li>
+</ul>
+<div class="aset fr" id="td_setMenu"><img src="u/images/tedit.png" width="16" height="16" alt="设置" /></div>
+<div class="fr" style="margin-top:24px;">
+<div id="menu_setMenu" class="feedDown" style="display:none;">
+<em class="fr" style=""><img src="u/images/tedit.png" alt="设置" width="16" height="16" /></em>
+<div class="c"></div>
+<a href="profile.php?action=privacy">隐私设置</a>
+<a href="profile.php?action=privacy&t=weibo">新鲜事设置</a>
+</div>
+</div>
+<a href="apps.php?q=weibo&do=attention&page=1" onclick="return weiboList.filterWeibo(this.href);" class="fr mr10 refresh" style="margin-top:4px;"><img title="刷新一下可能有新鲜事" class="lazy" data-original="u/images/refresh.png" width="16" height="16" /></a>
+</h5>
+<h5 class="h5 cc" style="display:none;">
+<a href="javascript:;" class="fl feedsAll" hidefocus="true"><span>&nbsp;</span>新鲜事筛选</a>
+<!--a href="apps.php?q=weibo" class="fr mr15 gray" title="点击进入我的新鲜事">我的新鲜事</a-->
+</h5>
+<div class="feedAdmin p10" id="feedAdmin" style="display:none">
+<table width="100%">
+<form id="filterWeiboForm" name="filterWeiboForm" method="post" action="apps.php?q=weibo&ajax=1"><input type="hidden" name="do" value="filterweibo"/><input type="hidden" name="page" value="1" id="page"/>
+<tr>
+<td width="50">关系：</td>
+<td>
+<label class="mr20"><input name="filter[relation][self]" type="checkbox" value="1" checked/>&nbsp;自己</label>
+<label class="mr20"><input name="filter[relation][friend]" type="checkbox" value="1" / checked>&nbsp;好友</label>
+<label class="mr20"><input name="filter[relation][attention]" type="checkbox" value="1" / checked>&nbsp;关注的人</label>
+</td>
+</tr>
+<tr>
+<td>来源：</td>
+<td>
+<label class="mr20"><input name="filter[source][article]" type="checkbox" value="1"  checked/>&nbsp;帖子</label>
+<label class="mr20"><input name="filter[source][photos]" type="checkbox" value="1" checked />&nbsp;相册</label>
+<label class="mr20"><input name="filter[source][group]" type="checkbox" value="1" checked />&nbsp;群组</label>
+</td>
+</tr>
+<tr>
+<td>类型：</td>
+<td>
+<label class="mr10"><input id="strings" name="filter[contenttype][string]" type="checkbox" value="1" checked />&nbsp;纯文字</label>
+<label class="mr20"><input id="imgs" name="filter[contenttype][img]" type="checkbox" value="1" checked />&nbsp;含图片</label>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<span class="btn4"><span><button type="button" onclick="getWeiboList('filterweibo', 1, 'weiboFeed');">筛选</button></span></span><span class="bt2"><span><button type="button" onclick="displayElement('feedAdmin',false);">关闭</button></span></span>
+</td>
+</tr>
+</form>
+</table>
+</div>
+<div class="conFeed" style="padding-bottom:0;">
+
+</div>
+<div id="photo_pop_mask" onclick="weibo.hidePhoto()" class="popImgbg" style="display:none;position:absolute;background:#000;filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;left:0;right:0;top:0;bottom:0;z-index:1;"></div>
+<div id="photo_pop" class="popImg" style="display:none;position:absolute;z-index:2;border:3px solid #fff">
+<div class="tac pr">
+<span class="popImgdel cp" onclick="weibo.hidePhoto()">关闭</span>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<div class="fl" id="prephoto">
+<span onclick="weibo.prevPhoto()" class="aPre" title="上一张" style="zoom:1"></span>
+</div>
+<div class="fl" id="nextphoto">
+<span onclick="weibo.nextPhoto()" class="aNext" title="下一张" style="zoom:1"></span>
+</div>
+<img src="javascript://" id="photo_path" style="display: block;line-height:1;" /></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="conFeed" id="weiboFeed">
+<div class="p15 f14 tac">最近没有新动静，试试<a href="u.php?a=friend&type=find" target="_blank">关注更多人</a>，或者去<a href="apps.php?q=weibo&do=attention&do=lookround" target="_blank">最新新鲜事</a>逛逛吧~~</div>
+</div>
+</div>
+</div>
+<div class="homeSide fr">
+<div class="infoBox mb10">
+<p class="mb10"><span class="f16 lh_24 b s5 mr5">edsqwe</span>
+</p>
+<div class="pr"><div id="floatMoney" style="width:110px;display:none;"></div></div>
+<p class="mb5">小鱼币：<a href="userpay.php"><strong id="money">0</strong></a>
+<span style="margin-left: 30px;">级别：<a href="profile.php?action=permission&gid=10" onmouseover="getObj('tips').style.display=''" onmouseout="getObj('tips').style.display='none'">社区新鱼</a></span></p>
+<div id="tips" class="popTips" style="display:none"><div class="fl"><div class="spaceTiptri"></div></div><div class="cc"><span class="fr">0/10</span>升级提示<div class="c"></div><div class="perCent"><div class="perValue" style="width:0%;"></div></div></div></div>
+ <style>
+.nav_zhima{padding: 9px 0 0 0;}
+.zhima_icon{position:relative;}
+.zhima_icon i{display:inline-block;width:20px;height:20px;vertical-align:middle; background-image:url(u/images/zhima.png);}
+.zhima_icon span{color:#333;display:inline-block;width:126px;padding:2px 3px;text-align:center;}
+.zhima_link{color:#333;}
+.zhima_btn{border-radius:4px;-webkit-border-radius:4px;padding:2px 5px;background-color:#57bcac;color:#fff;display: inline-block;}
+.nav_zhima a:hover{text-decoration:none;}
+</style>
+<!--通行证用户-->
+<div id="passport_ok" style="width:186px; height:18px; padding-left:23px; margin-top:15px; background:url(u/images/passport_icon.gif) bottom left no-repeat;">
+<a style="display:block; color:#00a1d5; font-size:12px; line-height:18px; font-family:'微软雅黑';" href="http://www.xiaoyu.com/u" target="_blank">
+查看我的通行证
+</a>
+</div>
+<!--未升级为通行证的用户-->
+<!--<div id="passport_up" style="display:none;width:186px; height:18px; padding-left:23px; margin-top:15px; background:url(u/images/passport_icon.gif) top left no-repeat;">
+<a style="display:block; color:#f60; font-size:12px; line-height:18px; font-family:'微软雅黑';" href="http://api.xiaoyu.com/pc?auth=f8ecs4ABuA%2F%2BuCtNpKMqeQJkSgbjo7K3wvHm7PQy37VfrI%2BotpE1h4CIf3VjY2Q5x0aeSTkfKX88ZfXpiGk25rV9u7hWjLw7Zk0SzJtCiciM8CiCRGv4JBF2WFMc5jgDovyWD1T5G6ctvR0dkMtQJ2b2UE3Cr9NUBsYIHo0oF7OmT611BrXrOkG60ydU%2BN%2FqSL3v3wDlRg9r7V4" target="_blank">
+升级为小鱼通行证
+</a>
+</div>-->
+<script type="text/javascript">
+jQuery.ajax({
+url: "http://api.xiaoyu.com/share/passport/getuserbyforum",
+type: 'get',
+dataType: 'jsonp',
+timeout: 1000,
+data: {forum_id:"63",forum_uid:"2059941"},
+callback:"callback",
+error: function(ret){
+},
+success: function(ret){
+if(ret.code == 0){
+jQuery("#passport_ok").show();
+}else{
+jQuery("#passport_up").show();
+}
+}
+});
+</script>
+<!--签到得鱼币、已签到、已连续签到-->
+<a href="javascript:;" id="punch" onclick="shoWpunch();" class="checkin">签到得鱼币
+<span class="ck_icon"></span>
+<span id="punch_num" class="ck_num">0</span>
+</a>
+<!--
+<h3 style="padding:10px 0 5px 0;font-size:14px;color:#555;font-weight:600;">客户端可以再次签到哟~</h3>
+<img src="./u/images/checkin/app-code.jpg" style="width:186px;">
+-->
+<div id="checkin_pop" style="display: none;">
+<link href="http://hot.xmfish.com/styles/app/ping.css" media="screen" rel="stylesheet" type="text/css">
+<style type="text/css">
+.checkin_popup {width: 390px; background: #fff; position: relative;color: #333;}
+#checkin_btn_close {display: block; width: 15px; height: 15px; background-image: url("./u/images/checkin/btn.close.png"); background-repeat:no-repeat; background-position: 0 0; position: absolute; top:8px; right: 12px; overflow: hidden; text-indent: -9999px;}
+#checkin_btn_close:hover {background-position: 0 -15px;}
+.chk_title {display: block; font-size: 14px; font-weight: bold; height: 30px; text-align: left; line-height: 30px; text-indent: 15px; background: #ebebeb;}
+.chk_con {padding: 15px; overflow: hidden; *zoom: 1;}
+.ckc_title {display: block; width: 213px; height: 23px; background: url(./u/images/checkin/checkin_title.jpg) no-repeat 0 0;}
+.chk_mood {margin: 15px 0;}
+.chk_mood a {display: inline; float: left; position: relative; width: 64px; height: 68px; text-align: center; line-height: 60px; border: 1px solid #fff; margin: 0 3px 4px 3px;}
+.chk_mood a:hover, .chk_mood .sel {border: 1px solid #99d0ff; background: #eaf6ff;}
+.chk_mood img {width: 48px; height: 48px;}
+.chk_mood span {display: block; width: 40px; height: 18px; position: absolute; top:25px; left: 13px;}
+.chk_text {width: 340px; height: 40px; padding: 8px; border: 1px solid #b9b9b9; resize: none; margin: 5px 0 10px 0;}
+.chk_sub {width: 360px; height: 30px; margin-bottom: 5px;}
+.chk_tongbu {float: left; line-height: 30px; color: #989797;}
+.chk_tongbu span {float: left;}
+.ckt_set {color: #4c4c4c;}
+.ckt_wb, .ckt_tqq, .ckt_qzone, .ckt_wbs, .ckt_tqqs, .ckt_qzones {display: inline; float: left; width: 16px; height: 16px; background-image: url(./u/images/checkin/tongbu_icon.png); background-repeat: no-repeat; margin: 7px 0 0 10px;}
+.chk_tongbu .ckt_wb {background-position: 0 0;}
+.chk_tongbu .ckt_wbs {background-position: 0 -16px;}
+.chk_tongbu .ckt_tqqs {background-position: -16px -16px;}
+.chk_tongbu .ckt_tqq {background-position: -16px 0;}
+.chk_tongbu .ckt_qzones {background-position: -64px -16px; margin-right: 10px;}
+.chk_tongbu .ckt_qzone {background-position: -64px 0; margin-right: 10px;}
+.chk_sub .chk_sub_btn {float: right;}
+.chk_sub_btn {font-weight: normal; padding: 5px 12px; font-size: 14px; font-weight: normal; border: 1px solid #2365b9; cursor: pointer; color: #fff; font-size: 14px; font-weight: bold; margin-right: 5px;
+background: #3289ec;
+background:-moz-linear-gradient(top, #3697ff, #2970c8);
+background:-webkit-gradient(linear,top, from(#3697ff),color-stop(#2970c8));
+background:-webkit-linear-gradient(top, #3697ff, #2970c8);
+background:-ms-linear-gradient(top, #3697ff, #2970c8);
+background:-o-linear-gradient(top, #3697ff, #2970c8);
+background:linear-gradient(top, #3697ff, #2970c8);
+}
+.chk_sub_btn:hover {text-decoration: none;}
+.chk_suc_l {width: 64px; height: 61px; margin: 10px 15px; float: left; background: url(./u/images/checkin/checkin_cg.jpg) no-repeat 0 0;}
+.chk_suc_r {width: 210px; float: left; background: url(./u/images/checkin/checkin_title2.jpg) no-repeat 0 0; padding-top: 25px;}
+.chk_suc_r span {color: #fe5900; font-size: 15px;}
+.chk_suc_r p {color: #434343; line-height: 18px; text-align: left;}
+.chk_suc_r .chk_sub_btn {float: left; margin-top: 15px;}
+.u_exchange{color:#f30;display:inline-block;padding:20px 0 0; font-size:14px;}
+</style>
+<div class="msg_overlay" id="msg_overlay"></div>
+<div id="rpost_info" style="left:50%;margin: -127px 0 0 -190px;">
+<!--签到成功-->
+<div class="checkin_popup" id="chk_sus" style="display: none;">
+<h3 class="chk_title">签到成功</h3>
+<a href="javascript:;" id="checkin_btn_close" >关闭</a>
+<div class="chk_con">
+<div class="chk_suc_l"></div>
+<div class="chk_suc_r" id="chk_cont">
+</div>
+</div>
+<div style="margin:20px 40px;border-top:#ebebeb 1px solid;text-align:center;">
+<p style="padding-top:25px">客户端签到还能再次获得鱼币哦~</p>
+<p style="margin-top:15px;"><img src="./u/images/checkin/app-code2.jpg" style="width:110px;"></p>
+<p style="margin-top:10px;">扫码下载客户端</p>
+</div>
+</div>
+<!--每日签到-->
+<div class="checkin_popup" id="evy_chk">
+<h3 class="chk_title">每日签到</h3>
+<div class="chk_con">
+<span class="ckc_title"></span>
+<form>
+<div class="chk_mood">
+<a class='sel' href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/1.gif" alt="" /><span>开心</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/2.gif" alt="" /><span>得意</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/3.gif" alt="" /><span>郁闷</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/4.gif" alt="" /><span>无聊</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/5.gif" alt="" /><span>伤心</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/6.gif" alt="" /><span>狂喜</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/7.gif" alt="" /><span>偷笑</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/8.gif" alt="" /><span>无感</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/9.gif" alt="" /><span>纠结</span></a>
+<a href="javascript:;"><img class="lazy" data-original="./u/images/chk_mood/10.gif" alt="" /><span>抓狂</span></a>
+</div>
+<textarea name="cont2" id="cont2" readonly class="chk_text">签到轻轻松松拿鱼币喽，哇卡卡！</textarea>
+<input type="hidden" name="cont1" id="cont1" value="开心">
+<input type="hidden" name="cont3" id="cont3" value="[s:404]">
+<div class="chk_sub">
+<a href="javascript:;" onclick="punchJob('12dd35e8493c5dfb9f6744a0ef5d1296');" id="rn_checkout" class="chk_sub_btn ulib-r3">立即签到</a>
+</div>
+</form>
+</div>
+<a href="javascript:;" id="checkin_btn_close" >关闭</a>
+</div>
+</div>
+</div>
+<h3 style="padding:10px 0 5px 0;font-size:14px;color:#555;font-weight:600;">客户端可以再次签到哟~</h3>
+<img src="./u/images/checkin/app-code.jpg" style="width:186px;">
+<a class="u_exchange" href="http://bbs.xmfish.com/hack.php?H_name=jingpai"> 小鱼币兑换>></a>
+</div>
+<!-- 新浪app开通 -->
+<div class="pd15">
+<div class="mb15">
+<form method="GET" action="apps.php">
+<input type="hidden" name="q" value="weibo" /><input type="hidden" name="do" value="topics" />
+<input name="topic" id="search_topic" type="text" value="查找新鲜事" class="input gray mr5"/><span class="bt2"><span><button type="submit" onclick="return check_search_apps()">搜索</button></span></span></form>
+</div>
+<h5 class="h5"><span class="fr"><a href="jobcenter.php?action=list" class="s7">更多</a></span><strong class="mr10"><a class="s6" href="jobcenter.php?action=list">可申请任务</a></strong></h5>
+<div class="ulD mb10">
+<ul class="cc">
+<li id="applyJob_11">
+<span class="fr s2"><img src="u/images/set/userpay.png" align="absmiddle" alt="小鱼币" title="小鱼币" /> + <strong>2</strong></span>
+<a href="javascript:;" onclick="applyJob(11);return false;" title="社区新鱼报到有奖">社区新鱼报到有奖</a></li>
+<li id="applyJob_2">
+<span class="fr s2"><img src="u/images/set/userpay.png" align="absmiddle" alt="经验值" title="经验值" /> + <strong>5</strong></span>
+<a href="javascript:;" onclick="applyJob(2);return false;" title="完善个人资料">完善个人资料</a></li>
+</ul>	
+</div>
+
+<h5 class="h5 mb5"><span class="fr"><a href="profile.php?action=modify&info_type=tags" class="s7">管理</a></span><strong class="mr10">个人标签</strong></h5>
+<div class="space_tags cc mb20">
+<div class="gray">贴上标签，展示个性，找到更多共同爱好的人！</div>
+</div>
+  
+<h5 class="h5 mb5"><span class="fr gray">累积访客(0)</span><strong class="mr10">最近访客</strong></h5>
+<div class="ulB mb20 cc">
+<div>暂无访客，<a href="u.php?a=friend&type=find">加几个好友</a>吧！</div>
+</div>
+<h5 class="h5 mb5">
+<span class="fr"><a href="u.php?a=friend&type=find" class="s7">更多</a></span>
+<strong class="mr10">可能感兴趣的人</strong></h5>
+<div class="dlC mb10">
+<dl class="cc dl">
+<dt class="dt">
+<a href="u.php?uid=6761" class="img_50"><i><img class="lazy" data-original="http://img.xmfish.com/attachment/upload/61/6761.jpg" width="48" height="48" /></i></a>
+</dt>
+<dd class="dd">
+<p><a href="u.php?uid=6761" class="b">小叶</a></p>
+<div class="lh_18">该用户暂无签名</div>
+<a href="javascript:;" class="follow" onclick="return Attention.add(this,'6761',1)">关注</a>
+</dd>
+</dl>
+<dl class="cc dl">
+<dt class="dt">
+<a href="u.php?uid=7945" class="img_50"><i><img class="lazy" data-original="http://img.xmfish.com/attachment/upload/small/45/7945.jpg" width="48" height="48" /></i></a>
+</dt>
+<dd class="dd">
+<p><a href="u.php?uid=7945" class="b">johnment</a></p>
+<div class="lh_18">老鱼</div>
+<a href="javascript:;" class="follow" onclick="return Attention.add(this,'7945',1)">关注</a>
+</dd>
+</dl>
+<dl class="cc dl">
+<dt class="dt">
+<a href="u.php?uid=9360" class="img_50"><i><img class="lazy" data-original="http://img.xmfish.com/attachment/upload/small/60/9360.jpg?time=1480262250" width="48" height="48" /></i></a>
+</dt>
+<dd class="dd">
+<p><a href="u.php?uid=9360" class="b">山鹰</a></p>
+<div class="lh_18">坚强与瘫痪斗争中……</div>
+<a href="javascript:;" class="follow" onclick="return Attention.add(this,'9360',1)">关注</a>
+</dd>
+</dl>
+</div>
+<div class="tac mb20"><a href="u.php?a=friend&type=invite"><img class="lazy" data-original="u/images/invite.png" alt="邀请好友来加入" /></a></div>
+<h5 class="h5 mb5">
+  
+<strong class="mr10">好友生日</strong>
+</h5>
+<div class="dlC mb10">
+<div class="gray">最近没有好友过生日!</div>
+</div>
+</div>
+</div>
+<div class="c"></div>
+</div>
+<script>
+var td_setMenu = {pz : 21}
+if(getObj('myFace')){
+getObj('myFace').onmouseover = function() {displayElement('toModifyFace', true);}
+getObj('myFace').onmouseout = function() {displayElement('toModifyFace', false);}
+}
+if(getObj('search_topic')){
+//str = "查找新鲜事";
+getObj('search_topic').onfocus = function() {
+if(getObj('search_topic').value == '查找新鲜事') getObj('search_topic').value="";
+nowClass = getObj('search_topic').className;
+getObj('search_topic').className = nowClass.replace("gray","");
+}
+getObj('search_topic').onClick = function() {
+if(getObj('search_topic').value == '查找新鲜事') getObj('search_topic').value="";
+nowClass = getObj('search_topic').className;
+getObj('search_topic').className = nowClass.replace("gray","");
+}
+getObj('search_topic').onblur = function() {
+if(getObj('search_topic').value == ""){
+getObj('search_topic').value='查找新鲜事';
+nowClass = getObj('search_topic').className;
+getObj('search_topic').className = nowClass+" gray";
+}
+}
+}
+function check_search_apps(){
+//str = "查找新鲜事";
+if(getObj('search_topic').value == '查找新鲜事')  getObj('search_topic').value="";
+}
+function applyJob(jobId) {
+var url = 'jobcenter.php?action=apply&verify=' + verifyhash;
+ajax.send(url, "&id="+jobId+"&step=2", function() {
+var response = eval(ajax.request.responseText)[0];
+if (response['flag']) {
+//showDialog("success", response['message'],'',function(){
+location.href = 'jobcenter.php?action=applied';
+//});
+} else {
+showDialog("error", response['message']);
+}
+});
+}
+function gainJobAward(jobId) {
+var url = 'jobcenter.php?action=gain&verify=' + verifyhash;
+var _this = this;
+ajax.send(url, "&id="+jobId+"&step=2", function() {
+var response = eval(ajax.request.responseText)[0];
+if (response['flag']) {
+showDialog("success",response['message'],2);
+} else {
+showDialog("error",response['message']);
+}
+});	
+}
+function punchJob(nowday) {
+var cont1=document.getElementById("cont1").value;
+var cont2=document.getElementById("cont2").value;
+var cont3=document.getElementById("cont3").value;
+if(!cont1||!cont2||!cont3){
+jQuery('#checkin_pop').hide();
+showDialog("error","请填写或者选择心情",2);
+}
+var url = 'jobcenter.php?action=punch&nowday='+nowday+'&verify=' + verifyhash+'&cont1='+cont1+'&cont2='+cont2+'&cont3='+cont3;
+var _this = this;
+ajax.send(url, "&step=2", function() {
+var punchObj = getObj('punch');
+var response = eval(ajax.request.responseText)[0];
+if (response['flag']) {
+punchObj.className = "checkin checkin_old";
+//punchObj.disabled = true;//解决ff缓存问题
+punchObj.onclick = '';
+var infomation = response['message'].split('	');
+getObj('punch_num').innerHTML=infomation[2];
+getObj('chk_cont').innerHTML="<p>"+ infomation[0] + "</p>";
+getObj('chk_cont').innerHTML+="<p>恭喜您获得<span>鱼币+" + infomation[1] + "</span></p>";
+getObj('chk_cont').innerHTML+= "<a href='/read-htm-tid-"+infomation[3]+"-page-e.html#a' target='_blank' id='read_chk' class='chk_sub_btn ulib-r3'>查看签到帖</a>";
+} else {
+showDialog("error",response['message'],2);
+}
+jQuery('#evy_chk').hide();
+jQuery('#chk_sus').show();
+});	
+}
+//floatMoney('铜币：+5');
+function floatMoney(assign){
+var x=window.x||{};
+x.creat=function(t,b,c,d){
+this.t=t;
+this.b=b;
+this.c=c;
+this.d=d;
+this.op=1;
+this.div = getObj('floatMoney');
+this.div.style.position="absolute";
+this.div.style.left="0";
+this.div.style.color="#ff5500";
+this.div.style.display="block";
+this.div.innerText = assign;
+this.div.textContent = assign;
+this.run();
+}
+x.creat.prototype={
+run:function(){
+var me=this;
+this.div.style.top=-this.c*(this.t/this.d)*(this.t/this.d)+this.b+"px";
+this.t++;
+this.q=setTimeout(function(){me.run()},15)
+if(this.t==this.d){
+clearTimeout(me.q);
+setTimeout(function(){me.alpha();},10);
+}
+},
+alpha:function(){
+var me=this;
+if(""=="v"){
+this.div.style.filter="alpha(opacity="+this.op*100+")";
+this.div.style.opacity=this.op;
+;}
+else{
+this.div.style.filter="alpha(opacity="+this.op+")";
+this.div.style.opacity=this.op;
+}
+this.op-=0.01;
+this.w=setTimeout(function(){me.alpha()},5)
+if(this.op<=0){
+clearTimeout(this.w);
+try{ document.body.removeChild(me.div);}catch(e){}
+}
+}
+}
+new x.creat(1,0,25,40);
+}
+function noticeJobCondition(jobId, conditionNotice) {
+var url = 'jobcenter.php?action=start&id='+jobId;
+var _this = this;
+ajax.send(url, "&ajax=1", function() {
+showDialog("success", conditionNotice);
+});
+}
+
+function display(obj,ctr){
+var message = getObj(ctr);
+var style = message.style;
+if(style.display == "none"){
+style.display = "block";
+obj.innerHTML = "收起" ;
+obj.className = 'fold';
+}else{
+style.display = "none";
+obj.innerHTML = "展开";
+obj.className = 'unfold';
+}
+}
+function replay(allid,current,obj){
+var prefix = "replay";
+var replayid = getObj(prefix+'_'+current);	
+var replay = getObj(prefix);
+var replayContent = getObj('atc_content');
+replayContent.value = '';
+replayid.style.display = 'block';
+replayid.appendChild(replay);
+for(var i =0;i<allid.length;i++){
+if(allid[i] != current){
+getObj(prefix+'_'+allid[i]).innerHTML = '';
+getObj('span_'+allid[i]).style.display = 'block';
+}
+}
+obj.style.display = 'none';
+}
+function changeStatus(url,rid,className){
+var httpUrl = url;
+var tipId = 'tip_';
+var optId = 'opt_';
+var skipId = 'skip_';
+var pid = '';
+function callback(){
+var tip = getObj(tipId+rid);
+var opt = getObj(optId+rid);
+var skip = getObj(skipId+rid);
+tip.className=className;
+tip.innerHTML=ajax.request.responseText;
+opt.style.display='none';
+skip.value = 'true';
+delDom(rid,1000);	
+}
+if(className == 'ignoreTip'){
+showDialog('confirm','你确定要忽略这些请求吗?',0,function(){
+ajax.send(httpUrl,'',callback,'','',true);})
+}else{
+ajax.send(httpUrl,'',callback,'','',true);
+}
+if(className == 'ignoreOneTip'){
+showDialog('confirm','你确定要忽略请求吗?',0,function(){
+ajax.send(httpUrl,'',callback,'','',true);})
+}else{
+ajax.send(httpUrl,'',callback,'','',true);
+}
+}
+function del(rid){
+var url = 'message.php?&type=ajax&action=del&rids[]='+rid;
+showDialog('confirm','确定要删除该消息?',0,function(){
+ajax.send(url,'',function(){delDom(rid,100)})
+});
+}
+function delDom(rid,timer){
+window.setTimeout(function(){getObj('message').removeChild(getObj('dl_'+rid))},timer);	
+}
+function filterWeibo(obj,type){//切换新鲜事类别
+var lis = obj.parentNode.childNodes;
+for(var i = 0,j=lis.length;i<j;i++){
+lis[i].className = '';
+}
+obj.className = 'current';
+window.setTimeout(function(){
+getWeiboList('filterweibo', 1, 'weiboFeed', 1, type);	
+},300);
+getObj('feedAdmin').style.display = 'none';
+}
+</script>
+<script type="text/javascript">
+function shoWpunch(){
+	jQuery('#checkin_pop,#msg_overlay,#rpost_info').show();
+}
+jQuery('#read_chk,#checkin_btn_close').click(function(){
+jQuery('#checkin_pop').hide();
+});
+var moods1 = ['开心','得意','郁闷','无聊','伤心','狂喜','偷笑','无感','纠结','抓狂'];
+var moods3 = ['[s:404]','[s:398]','[s:394]','[s:397]','[s:393]','[s:403]','[s:402]','[s:400]','[s:401]','[s:406]'];
+var moods2 = ['签到轻轻松松拿鱼币喽，哇卡卡！','又抢到了一个沙发，回帖高手就是我哦。','昨天又忘记签到了，~~~~(>_<)~~~~ 。','关于明天的事，我们后天就知道了。','物价与欧洲接轨，房价与月球接轨，工资与非洲接轨','帖子被加分了，噢耶！','三日打鱼，剩下的时间都上网。','小鱼上多了，什么虾兵蟹将没见过。','上小鱼还是上小鱼呐，这是个问题。','网络又抽风了啦，呼叫技术人员ing~~'];
+jQuery('.chk_mood a').click(function(){
+var i = jQuery(this).index();
+jQuery('.chk_mood a').removeClass('sel');
+jQuery(this).addClass('sel');
+document.getElementById("cont2").value=moods2[i];
+document.getElementById("cont1").value=moods1[i];
+document.getElementById("cont3").value=moods3[i];
+});
+</script>
+<script src="u/js/friend.js"></script>
+<div class="c"></div>
+</div>
+</div>
+<style>
+.footer {background: #FCFCFC;border: #E1E1E1 solid 1px;width: 958px;margin: 10px auto}
+.f_bor {margin-top: 20px;height: 60px}
+.f_bor ul {list-style-type: none;margin: 0px;padding: 0px}
+.f_bor li {float: left;margin-left: 38px;padding-right: 38px;border-right: #D2D2D2 solid 1px;width: 160px;display: inline}
+.f_im {float: left;}
+.f_lin {float: right;width: 80px;}
+.f_lin span {display: block}
+.f_lin span a {color: #666666;line-height: 19px;}
+.f_bor1 {margin: 10px auto;height: 45px;position: relative}
+.f_logo {float: left;margin-left: 20px;display: inline;}
+.copyright {width: 530px;float: left;color: #999999}
+.copyright a {color: #999999}
+.f_search {text-align: center;}
+.sea_1 {border: #B3B3B3 solid 1px;width: 120px;height: 14px;text-align: left}
+.f_right {float: right;margin-right: 80px;display: inline}
+.pos {background: none repeat scroll 0 0 #F5F5F5;border: 1px solid #DAD9D9;margin: 10px auto;padding: 3px 15px;}
+</style>
+<div class="footer">
+<div class="f_bor">
+<ul>
+<li>
+<div class="f_im"><img alt="关爱互助"
+class="lazy" data-original="http://www.xmfish.com/images/chanel/www/f_1.gif"></div>
+<div class="f_lin"><span><a href="http://life.xmfish.com/"
+target="_blank" style="font-weight: bold; color: #FB8F03" rel="external nofollow">鹭岛民声</a></span>
+<span><a target="_blank"
+href="http://bbs.xmfish.com/thread-htm-fid-158.html" rel="external nofollow">小鱼希望小学</a></span>
+<span><a target="_blank"
+href="http://bbs.xmfish.com/thread-htm-fid-152.html" rel="external nofollow">小鱼志愿者</a></span></div>
+</li>
+<li>
+<div class="f_im"><img width="72" height="60" alt="分享交流"
+class="lazy" data-original="http://www.xmfish.com/images/chanel/www/f_2.gif"></div>
+<div class="f_lin"><span><a target="_blank"
+href="http://bbs.xmfish.com/thread-htm-fid-6.html" rel="external nofollow">鹭岛民生</a></span> <span><a
+target="_blank" href="http://bbs.xmfish.com/thread-htm-fid-55.html" rel="external nofollow">物尽其用</a></span>
+<span><a target="_blank"
+href="http://bbs.xmfish.com/thread-htm-fid-27.html" rel="external nofollow">谈天说地</a></span></div>
+</li>
+<li>
+<div class="f_im"><img width="72" height="60" alt="关于我们"
+class="lazy" data-original="http://www.xmfish.com/images/chanel/www/f_3.gif"></div>
+<div class="f_lin"><span><a target="_blank"
+href="http://special.xmfish.com/help/service.html" rel="external nofollow">商务合作</a></span> <span><a
+target="_blank" href="http://special.xmfish.com/help/job.html" rel="external nofollow">诚聘英才</a></span>
+<span><a target="_blank" href="http://special.xmfish.com/help/map.html">网站地图</a></span></div>
+</li>
+<li style="border-right:none">
+<div class="f_im"><img width="72" height="60" alt="关注我们"
+class="lazy" data-original="http://www.xmfish.com/images/chanel/www/f_4.gif"></div>
+<div class="f_lin">
+<span><a target="_blank" href="http://special.xmfish.com/help/index.html" rel="external nofollow">关于我们</a></span>
+<span><a target="_blank" href="http://special.xmfish.com/help/contact.html" rel="external nofollow">联系我们</a></span>
+<span><a target="_blank" href="http://www.zzfish.cn" rel="external nofollow">漳州小鱼</a></span>
+</div>
+</li>
+</ul>
+</div>
+<div class="f_bor1">
+<div class="f_logo"><a href="http://www.xmfish.com/" target="_blank" rel="external nofollow"><img
+alt="厦门小鱼网" class="lazy" data-original="http://www.xmfish.com/images/chanel/www/f_logo.gif" border="0"></a></div>
+<div class="copyright">
+<form target="_blank" action="http://bbs.xmfish.com/searcher.php"
+method="get" id="srchfoot" accept-charset="gbk" target="_blank"
+onsubmit="if(!!window.ActiveXObject){document.charset='gbk';}"><input
+type="hidden" value="thread" name="type">
+<div class="f_search"><input
+type="text" class="sea_1" name="keyword">&nbsp;<img align="absmiddle"
+onclick="document.getElementById('srchfoot').submit();" style="cursor: pointer;" class="lazy" data-original="http://www.xmfish.com/images/chanel/www/sea_btn.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+target="_blank" href="http://special.xmfish.com/help/law.html" rel="external nofollow">法律声明</a></div>
+<div style="text-align: center; line-height: 22px; color: #999999">&copy;2003-2012
+<a href="http://www.xmfish.com/">小鱼网</a> 版权所有，并保留所有权利。<a target="_blank"
+href="http://www.miibeian.gov.cn/" rel="external nofollow">闽ICP备05000086号</a> <a
+target="_blank" href="http://special.xmfish.com/help/icp.html" rel="external nofollow">闽B2-20040214</a></div>
+</form>
+</div>
+<div class="f_right"><a target="_blank"
+href="http://xmcyberpolice.cn/index.asp" rel="external nofollow"><img
+class="lazy" data-original="http://www.xmfish.com/images/chanel/www/netplice.gif" border="0"></a></div>
+<div><a target="_self" href="#" rel="external nofollow"><img border="0"
+class="lazy" data-original="http://www.xmfish.com/images/chanel/www/top.gif"></a></div>
+</div>
+</div>
+<script language="JavaScript" src="js/global.js"></script>
+<script language="JavaScript" src="js/app_global.js"></script>
+<script src="/wap/js/jquery.lazyload.js"></script>  
+<script>
+jQuery(function(){
+jQuery("img.lazy").lazyload({ placeholder : "/wap/images/load.gif", effect : "show",skip_invisible : false, threshold : 500});
+});
+</script>
+<div style="display:none">
+<script src="http://v8.cnzz.com/stat.php?id=36693&web_id=36693" language="JavaScript"></script><script src="http://s4.cnzz.com/stat.php?id=951672&web_id=951672" language="JavaScript"></script>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+var openmenu = {'td_setMenu' : 'menu_setMenu'};
+window.onReady(function(){read.InitMenu();});
+WINDOW_LOADED=1;
+</script>
